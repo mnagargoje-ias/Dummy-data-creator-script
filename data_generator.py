@@ -7,7 +7,6 @@ def random_date():
     end = datetime.date(2023, 2, 1)
     return start + datetime.timedelta(seconds=random.randint(0, int((end - start).total_seconds())))
 
-
 def get_data():
     params = {}
     params['average_in_view_time'] = random.random()*10
@@ -41,7 +40,8 @@ print(schema)
 
 df = pd.DataFrame(schema)
 
-n = 10000
+#Total number of records
+n = 10000 
 
 for i in range(n):
     df.loc[len(df)]=get_data()
