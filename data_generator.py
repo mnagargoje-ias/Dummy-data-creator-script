@@ -40,10 +40,10 @@ print(schema)
 
 df = pd.DataFrame(schema)
 
-
 n = 10000
 
 for i in range(n):
     df.loc[len(df)]=get_data()
 
+#writes into the file
 df.to_csv('snowflake_sample_raw9.csv', index=False)
