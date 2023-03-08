@@ -25,12 +25,12 @@ def get_data():
     params['not_in_view_passed_imps'] = 1 if params['in_view_passed_imps']==0 else 0
     #params['in_view_passed_imps'] = random.randint(1,50)
     #params['not_in_view_passed_imps'] = random.randint(1,50)
-    params['gross_ias_imps'] = random.randint(0, 50)
-    params['gross_pm_imps'] = random.randint(0, 50) if params['gross_ias_imps']==0 else 0
-    params['gross_pm_yt_bs_imps'] = random.randint(0, 50) if params['gross_pm_imps']==0 else 0
-    params['gross_pm_yt_imps'] = random.randint(0, 50) if params['gross_pm_yt_bs_imps']==0 else 0
-    params['pm_yt_bs_viewability_common_givt_imps'] = random.randint(0, 50) if params['gross_pm_yt_imps']==0 else 0
-    params['non_compliant_ads'] = random.randint(0, 50) if params['pm_yt_bs_viewability_common_givt_imps']==0 else 0
+    #params['gross_ias_imps'] = random.randint(0, 50)
+    #params['gross_pm_imps'] = random.randint(0, 50) if params['gross_ias_imps']==0 else 0
+    #params['gross_pm_yt_bs_imps'] = random.randint(0, 50) if params['gross_pm_imps']==0 else 0
+    #params['gross_pm_yt_imps'] = random.randint(0, 50) if params['gross_pm_yt_bs_imps']==0 else 0
+    #params['pm_yt_bs_viewability_common_givt_imps'] = random.randint(0, 50) if params['gross_pm_yt_imps']==0 else 0
+    #params['non_compliant_ads'] = random.randint(0, 50) if params['pm_yt_bs_viewability_common_givt_imps']==0 else 0
 
     return params
 
