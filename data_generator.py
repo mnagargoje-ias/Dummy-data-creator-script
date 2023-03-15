@@ -5,7 +5,6 @@ import datetime
 def random_date():
     start = datetime.date(2023, 1, 1)
     end = datetime.date(2023, 2, 1)
-    
     return start + datetime.timedelta(seconds=random.randint(0, int((end - start).total_seconds())))
 
 def get_data():
