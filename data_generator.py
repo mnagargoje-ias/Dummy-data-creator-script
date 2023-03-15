@@ -33,6 +33,7 @@ def get_data():
 
     return params
 
+
 schema = {}
 for i in get_data():
     schema[i] = []
