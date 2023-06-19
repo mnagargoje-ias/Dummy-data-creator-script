@@ -20,10 +20,10 @@ def get_data():
     params['media_type_id'] = random.choice([121,221,212,122,222,921,131,132])
     params['quality_impression'] = random.choice([True, False])
     params['hit_date'] = random_date()
-    params['in_view_passed_imps'] = random.choice([0, 1])
-    params['not_in_view_passed_imps'] = 1 if params['in_view_passed_imps']==0 else 0
-    #params['in_view_passed_imps'] = random.randint(1,50)
-    #params['not_in_view_passed_imps'] = random.randint(1,50)
+    # params['in_view_passed_imps'] = random.choice([0, 1])
+    # params['not_in_view_passed_imps'] = 1 if params['in_view_passed_imps']==0 else 0
+    params['in_view_passed_imps'] = random.randint(1,50)
+    params['not_in_view_passed_imps'] = random.randint(1,50)
   
     return params
 
@@ -41,5 +41,5 @@ n = 10000
 for i in range(n):
     df.loc[len(df)]=get_data()
 
-#writes into the file
+#Creates a new file and writes into that file
 df.to_csv('snowflake_sample_raw9.csv', index=False)
